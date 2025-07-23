@@ -1,0 +1,134 @@
+
+
+body{
+    background-color:;
+}
+
+/* shared style */
+.btn-primary{
+  background-color: orange;
+  border-radius: 5px;
+  color: white;
+  padding: 20px 25px;
+  font-size: 1.25em;
+  font-size: 600;
+  border: none;
+  width: 100%;
+  
+}
+
+.p-text{
+  font-size: 1.25rem;
+  font-weight: 600;
+
+}
+
+.text-primary{
+  color: orange;
+}
+
+.text-gray{
+  color:#424242;
+}
+
+.text-light-gray{
+  color: #727272;
+}
+
+.bg-light{
+  background-color:F5F8FF;
+}
+.section-title{
+  font-size: 2.8rem;
+  font-weight:700;
+}
+
+
+.disply-flex{
+  display: flex;
+}
+
+/* navbar style start */
+
+.nav-item{
+  list-style: none;
+}
+.nav-link{
+  
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+
+}
+
+.navbar{
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content{
+    max-width: 850px;
+    text-align: left;
+    align-self: flex-end;
+  
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+.banner{
+  max-width: 1440px;
+  margin-top: 150px;
+  
+  
+  }
+
+  .banner-discription{
+    font-size: 1rem;
+  }
+
+  .Plants-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.Plants-container{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+.Plants-name{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.Plants-price{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.images-control{
+    height: 350px;
+    width: 300px;
+    
+}
+
+/* .plants-card{
+  border: 1px solid orange;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+} */
+
+.plants-card{
+    margin-bottom: 50px;
+}
+
+ 
