@@ -1,9 +1,12 @@
 
 
-body{
-    background-color:;
-}
-
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f8fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+} */
 /* shared style */
 .btn-primary{
   background-color: orange;
@@ -111,24 +114,63 @@ body{
   font-weight: 600;
   margin-top: 10px;
 }
-.images-control{
+ .images-control{
     height: 350px;
     width: 300px;
     
 }
 
-/* .plants-card{
-  border: 1px solid orange;
-  width: 240px;
-  height: 240px;
+.plants-card{
+    margin-bottom: 50px;
+    
   border-radius: 8px;
   text-align: center;
   align-items: center;
   justify-content: center;
-} */
 
-.plants-card{
-    margin-bottom: 50px;
+    
 }
 
- 
+.Plants-section{
+max-width: 1440px;
+}
+
+/* responsive style section */
+@media screen and (max-width:576px) {
+  
+  .banner,
+  .Plants-container
+  {
+    flex-direction: column-reverse;
+    gap: 20px;
+  } 
+  .Plants-container,
+  .plants-card
+  {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .gayebul-hawa{
+    display: none;
+  }
+
+  .Plants-container{
+  justify-items: center;
+  gap: 8px;
+  margin: 0 auto;
+  
+  
+  
+}
+
+.banner-img{
+  width: 100%;
+}
+
+.images-control{
+  width: 100%;
+}
+
+
+
+}
