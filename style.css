@@ -8,6 +8,11 @@
   color: #333;
 } */
 /* shared style */
+
+.container-width{
+  max-width: 1140px;
+  margin: 0 auto;
+}
 .btn-primary{
   background-color: orange;
   border-radius: 5px;
@@ -65,7 +70,6 @@
 }
 
 .navbar{
-    max-width: 1440px;
     justify-content: space-between;
     align-items: center;
 }
@@ -81,18 +85,20 @@
   font-size: 4rem;
 }
 .banner{
-  max-width: 1440px;
   margin-top: 150px;
   
   
   }
+  .banner-img, .flower-shop{
+    width: 100%;
+  }
 
-  .banner-discription{
+  .banner-description{
     font-size: 1rem;
   }
 
   .Plants-info{
-  max-width: 540px;
+  /* max-width: 540px; */
   margin: 50px auto;
   text-align: center;
 }
@@ -115,25 +121,73 @@
   margin-top: 10px;
 }
  .images-control{
-    height: 350px;
-    width: 300px;
+    max-width: 275px;
     
 }
 
 .plants-card{
-    margin-bottom: 50px;
-    
+  margin-bottom: 50px;
+  /* max-width: 675px;  */
   border-radius: 8px;
   text-align: center;
   align-items: center;
-  justify-content: center;
-
+  justify-content:center;
     
 }
 
-.Plants-section{
-max-width: 1440px;
+/* Plants Lover style Section */
+
+.plants-lover-container {
+  
+  align-items: flex-start;
+  max-width: 1140px;
+  margin: 40px auto;
 }
+
+.Plants-lover-left {
+  position: relative;
+  width: 50%;
+}
+
+.flower-shop img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 100%;
+  width: 286px;
+  height: 286px;
+}
+
+.Plants-lover-right {
+  margin-left: 60px;
+  width: 50%;
+}
+.Plants-lover-right ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+.Plants-lover-right li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
 
 /* responsive style section */
 @media screen and (max-width:576px) {
@@ -150,27 +204,38 @@ max-width: 1440px;
     grid-template-columns: repeat(2, 1fr);
     
   }
-  .gayebul-hawa{
+  .gayebul-hawa,
+  .trusted-badge{
     display: none;
   }
 
-  .Plants-container{
+  .Plants-container
+  {
   justify-items: center;
   gap: 8px;
   margin: 0 auto;
-  
-  
-  
+}
+.Plants-lover-right{
+  justify-items: center;
+  text-align: left;
+  margin: 0 auto;
+
+}
+.plants-lover-container{
+  flex-direction: column;
 }
 
-.banner-img{
+.banner-img,
+{
   width: 100%;
 }
 
 .images-control{
   width: 100%;
 }
-
+.flower-shop{
+  width: 410px;
+}
 
 
 }
